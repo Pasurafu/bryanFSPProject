@@ -1,0 +1,44 @@
+
+.cContainer {
+    margin-bottom: 20px; 
+}
+
+/* untuk pc */
+@media (min-width: 1024px) {
+   .pcContainer {
+        display: flex;
+    }
+
+   .pcContainer .cContainer {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+   .pcContainer .cContainer:last-child {
+        margin-right: 0;
+    }
+}
+
+/* untuk tablet */
+@media (min-width: 576px) and (max-width: 1023px) {
+    .tabletContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabletContainer .cContainer {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .tabletContainer .cContainer:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* untuk HP */
+@media (max-width: 575px) {
+    .phoneContainer .cContainer {
+        margin-right: 0;
+    }
+}
